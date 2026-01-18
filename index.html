@@ -30,6 +30,34 @@
 
         <title>Shah Advisory - Trusted Land Investment Consultancy</title>
         <link rel="icon" type="image/png" href="assets/img/favicon.png">
+        <style>
+            /* Show white logo when navbar is sticky on mobile */
+            @media (max-width: 991px) {
+                /* When navbar has sticky class */
+                #navbar.sticky .navbar-brand .logo-light {
+                    display: none !important;
+                }
+                
+                #navbar.sticky .navbar-brand .logo-dark {
+                    display: inline-block !important;
+                    width: 15rem;
+                    height: auto;
+                }
+            }
+
+            /* Optional: If you need to ensure default state */
+            @media (max-width: 991px) {
+                .navbar-brand .logo-light {
+                    display: inline-block;
+                    width: 15rem;
+                    height: auto;
+                }
+                
+                .navbar-brand .logo-dark {
+                    display: none;
+                }
+            }
+        </style>
     </head>
     <body>
 
@@ -121,10 +149,10 @@
                                 <a href="index.html" class="navbar-brand">
                                     <img
                                         src="assets/img/logo-h.png"
-                                        style="height: 5rem;"
+                                        style="width: 15rem; height: auto;"
                                         alt="Logo" class="logo-light">
                                     <img
-                                        src="assets/img/logo-white.png"
+                                        src="assets/img/logo-h-white.png"
                                         alt="Logo" class="logo-dark">
                                 </a>
                                 <div class="menu-area mx-auto">
@@ -2308,9 +2336,10 @@
                                         data-cue="slideInLeft">
                                         <a href="index.html"
                                             class="logo d-block mb-35">
-                                            <h2
-                                                style="color: #fff; margin: 0;">Shah
-                                                Advisory</h2>
+                                            <img
+                                                src="assets/img/logo-h-white.png"
+                                                alt="Image"
+                                                style="width: 15rem; height: auto;">
                                         </a>
                                         <p class="text-gray fs-xxl-18 mb-0">Shah
                                             Advisory is a trusted land
